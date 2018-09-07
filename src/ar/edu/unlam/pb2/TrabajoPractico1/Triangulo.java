@@ -15,7 +15,7 @@ public class Triangulo {
 		return perimetro;
 	}
 
-	public Double calcularAltura(Double altura, Double base) {
+	public Double calcularArea(Double altura, Double base) {
 
 		Double area = 0.0;
 
