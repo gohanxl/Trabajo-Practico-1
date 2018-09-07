@@ -11,11 +11,11 @@ public class testCirculo {
 	public void sePuedenCrearCirculos() {
 
 		Circulo unCirculo;
-		unCirculo = new Circulo(1.0, 2.0, 2.0);
+		unCirculo = new Circulo(8.0);
 
 		assertNotNull(unCirculo);
 
-		Circulo otroCirculo = new Circulo(4.0, 5.0, 5.0);
+		Circulo otroCirculo = new Circulo(9.0);
 		assertNotNull(unCirculo);
 
 	}
@@ -23,11 +23,11 @@ public class testCirculo {
 	@Test
 	public void elPerimetroDeUnCirculoEsPiPorRadioPorDos() {
 
-		Circulo unTriangulo = new Circulo(4.0, 2.0, 2.0);
+		Circulo unCirculo = new Circulo(8.0);
 
-		Double esperado = 8.0;
+		Double esperado = 50.26;
 
-		Double actual = unTriangulo.calcularPerimetro(4.0, 2.0, 2.0);
+		Double actual = unCirculo.calcularPerimetro(8.0);
 
 		assertEquals(esperado, actual, 0.01);
 	}
@@ -35,13 +35,13 @@ public class testCirculo {
 	@Test
 	public void elAreaDeUnCirculoDebeSerPiPorRadioAlCuadrado() {
 		
-		Circulo unTriangulo = new Circulo(4.0, 2.0, 2.0);
+		Circulo unCirculo = new Circulo(6.0);
 		
-		Double esperado = 4.0;
+		Double esperado = 113.09;
 		
-		Double actual = unTriangulo.calcularAltura(4.0, 2.0);
+		Double actual = unCirculo.calcularArea(6.0);
 	
-		assertEquals(esperado, actual);
+		assertEquals(esperado, actual, 0.01);
 		
 	}
 	
