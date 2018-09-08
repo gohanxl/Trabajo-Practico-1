@@ -5,7 +5,7 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class testCirculo {
+public class TestCirculo {
 
 	@Test
 	public void sePuedenCrearCirculos() {
